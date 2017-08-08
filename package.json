@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*spec.ts  --watch --watch-extensions ts",
+    "test:debug": "npm run test -- --inspect-brk",
     "postinstall": "npm run build",
     "build": "tsc",
     "start": "node build/index.js",
@@ -32,7 +33,10 @@
     "dotenv": "^2.0.0",
     "koa": "^2.3.0",
     "koa-bodyparser": "^3.2.0",
-    "koa-router": "^7.2.1"
+    "koa-router": "^7.2.1",
+    "nodemailer": "^4.0.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "nodemailer-wellknown": "^0.2.3"
   },
   "devDependencies": {
     "@types/chai": "^4.0.2",
