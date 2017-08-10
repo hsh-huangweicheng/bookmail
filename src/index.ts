@@ -6,7 +6,7 @@
 
 // Save your local vars in .env for testing. DO NOT VERSION CONTROL `.env`!.
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    require('dotenv').config()
+    require('dotenv').config();
 };
 
 import * as Koa from 'koa';
