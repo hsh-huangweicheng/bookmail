@@ -11,8 +11,6 @@ const DOMAIN_MAPPING: { [domain: string]: any } = {
     'qq.com': 'QQ'
 };
 
-
-
 export interface SmtpConfig {
     host: string,
     port: number,

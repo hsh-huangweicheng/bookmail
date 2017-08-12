@@ -42,7 +42,7 @@ describe('mail client', () => {
         });
     });
 
-    it('queryBookList', (done) => {
+    xit('queryBookList', (done) => {
         mailClient.queryBookList().then(done, done);
-    }).timeout(10000);
+    });
 });
